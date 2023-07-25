@@ -11,6 +11,7 @@ setChannelB	KEYWORD2
 getChannelA	KEYWORD2
 getChannelB	KEYWORD2
 channelCount	KEYWORD2
+allOff	KEYWORD2
 
 
 # Constants (LITERAL1)
