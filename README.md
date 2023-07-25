@@ -16,7 +16,7 @@ Arduino library for ADG726 - 16 to 1 channel (2x) multiplexer.
 **Experimental**
 
 ADG726 is an Arduino class that controls two 16 to 1 multiplexers
-over a parallel interface.
+over a **parallel** interface.
 Only one of the 16 channels can be connected at the same time.
 The channels can be set per multiplexer or together in one call.
 The library also support to set them all off (17th state).
@@ -28,9 +28,6 @@ one analog port, or to select between 16 DHT22 sensors.
 
 No tests with hardware have been done yet, so use with care.
 Feedback welcome!
-
-
-TODO insert picture.
 
 
 #### Related
@@ -70,6 +67,7 @@ Valid values for channel are 0..15.
 #### Must
 
 - improve documentation
+  - insert schematic
 - test with hardware
 - keep in sync with ADG725 (interface)
 
