@@ -18,9 +18,9 @@
 class ADG726
 {
 public:
-  ADG726(uint8_t A0, uint8_t A1, uint8_t A2, uint8_t A3, uint8_t CSA, uint8_t CSB, uint8_t EN, uint8_t WR)
+  ADG726(uint8_t A, uint8_t B, uint8_t C, uint8_t D, uint8_t CSA, uint8_t CSB, uint8_t EN, uint8_t WR)
   {
-    uint8_t arr[4] = { A0, A1, A2, A3 };
+    uint8_t arr[4] = { A, B, C, D };
     ADG726(arr, CSA, CSB, EN, WR);
   }
 
