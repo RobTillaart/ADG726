@@ -12,10 +12,7 @@
 
 #define ADG726_LIB_VERSION         (F("0.1.0"))
 
-#define ADG726_ALLOFF              0x80    //  ENable bit (false)
-#define ADG726_A_ONLY              0x20    //  retain B
-#define ADG726_B_ONLY              0x40    //  retain A
-#define ADG726_AB_BOTH             0x00    //  retain none
+#define ADG726_ALLOFF              0x80
 
 
 class ADG726
@@ -23,7 +20,7 @@ class ADG726
 public:
   ADG726(uint8_t A0, uint8_t A1, uint8_t A2, uint8_t A3, uint8_t CSA, uint8_t CSB, uint8_t EN, uint8_t WR)
   {
-    uint8_t ar[4] = { A0, A1, A2, A3 };
+    uint8_t arr[4] = { A0, A1, A2, A3 };
     ADG726(arr, CSA, CSB, EN, WR);
   }
 
@@ -31,9 +28,9 @@ public:
   {
     for (int i = 0; i < 4; i++)
     {
-      _address[i] = address[i];
-      pinMode(_address[i], OUTPUT);
-      digitalWrite(_address[i], LOW);
+      _addr[i] = address[i];
+      pinMode(_addr[i], OUTPUT);
+      digitalWrite(_addr[i], LOW);
     }
 
     _CSA = CSA;

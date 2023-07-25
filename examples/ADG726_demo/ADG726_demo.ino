@@ -1,24 +1,24 @@
 //
-//    FILE: ADG725_demo.ino
+//    FILE: ADG726_demo.ino
 //  AUTHOR: Rob Tillaart
 // PURPOSE: minimal sketch
 //     URL: https://github.com/RobTillaart/ADG725
 
 
-#include "ADG725.h"
+#include "ADG726.h"
 
 
-ADG725 ADG(10, 11, 12);
+ADG726 ADG(4, 5, 6, 7, 8, 9, 10, 11);
 
 uint32_t start, stop;
 
 void setup()
 {
   Serial.begin(115200);
-  Serial.print("ADG725_LIB_VERSION: ");
-  Serial.println(ADG725_LIB_VERSION);
+  Serial.print("ADG726_LIB_VERSION: ");
+  Serial.println(ADG726_LIB_VERSION);
   delay(100);
-  
+
   start = micros();
   ADG.setChannel(0);
   stop = micros();
